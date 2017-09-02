@@ -7,6 +7,14 @@
 
 .venue__header {
   .venue__rating {
-    color: #C2D8B9;
+    color: #FFCA28;
+  }
+}
+
+.venue__status {
+  color: #4CAF50;
+
+  &--closed {
+    color: #EF5350;
   }
 }

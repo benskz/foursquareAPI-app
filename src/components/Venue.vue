@@ -5,7 +5,9 @@
         <h2 class="venue__header">{{venue.name}} <span class="venue__rating">{{venue.rating}}</span></h2>
       </div>
       <div class="column column--end">
-        <p>Is open</p>
+        <p class="venue__status" :class="{'venue__status--closed': !venue.hours.isOpen}">
+          {{venue.hours.status}}
+        </p>
       </div>
     </div>
 
@@ -14,10 +16,9 @@
         <p>{{venue.location.address}}, {{venue.location.postalCode}}</p>
       </div>
       <div class="column column--end">
-        <p>LAT {{venue.location.lat}} LAT {{venue.location.lng}}</p>
+        <p class="venue__latlng">LAT {{venue.location.lat}} LAT {{venue.location.lng}}</p>
       </div>
     </div>
-    <!-- {{venue.venue}} -->
   </div>
 </template>
 

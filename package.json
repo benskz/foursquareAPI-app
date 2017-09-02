@@ -9,6 +9,7 @@
   "author": "benskz <bernardo@unlockingthedigital.com>",
   "license": "MIT",
   "scripts": {
+    "webpack": "webpack",
     "client": "webpack-dev-server --inline --hot --port 3000"
   },
   "devDependencies": {

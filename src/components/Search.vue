@@ -6,18 +6,21 @@
       </form>
     </div>
 
-    <div class="venues">
-      <div v-for="venue in venues" :key="venues.id" class="venues__item">
-        {{venue.venue.name}}
-      </div>
-    </div>
+    <transition-group tag="div" class="venues" name="fade">
+      <venue v-for="venue in venues" :key="venue.venue.id" :venue="venue.venue" />
+    </transition-group>
   </div>
 </template>
 
 <script>
-  import foursquare from '../../foursquare'
+  import foursquare from '../foursquare'
+  import venue from './Venue.vue'
 
   export default {
+    components: {
+      venue,
+    },
+
     data () {
       return {
         location: '',

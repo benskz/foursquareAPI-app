@@ -25,3 +25,7 @@ For this project I used scss mainly for it's import and nested syntax.
 After all that was setup I created 2 components for the Search and listing of the venues making use of Vue's data-binding.
 In order to interact with Foursquare's API I created a small class to contain the Foursquare app details, generate the urls, and serve as an interface to the endpoints.
 For the requests themselves I used [request](https://github.com/request/request) for simple HTTP calls.
+
+### Todo
+Error handling
+Add UglifyJS to webpack build for smaller bundle

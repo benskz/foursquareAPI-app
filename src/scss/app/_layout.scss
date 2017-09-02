@@ -10,6 +10,8 @@
   flex-grow: 1;
   flex-shrink: 0;
   align-items: stretch;
+
+
 }
 
 .column {
@@ -23,5 +25,11 @@
   &--end {
     justify-content: flex-end;
     margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .row, .column {
+    display: block;
   }
 }

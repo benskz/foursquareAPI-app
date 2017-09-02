@@ -2,7 +2,8 @@
   <div class="venue">
     <div class="row">
       <div class="column column--start">
-        <h2 class="venue__header">{{venue.name}} <span class="venue__rating">{{venue.rating}}</span></h2>
+        <h2 class="venue__header">{{venue.name}}</h2>
+        <span class="venue__rating">{{venue.rating}}</span>
       </div>
       <div class="column column--end">
         <p class="venue__status" :class="{'venue__status--closed': !venue.hours.isOpen}">

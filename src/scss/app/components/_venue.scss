@@ -1,14 +1,26 @@
 .venue {
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 1.4rem;
   background-color: #FFF;
   border-radius: 3px;
+
+  @media screen and (min-width: 700px) {
+    p {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .venue__header {
-  .venue__rating {
-    color: #FFCA28;
+  @media screen and (max-width: 700px) {
+    display: inline-block;
   }
+}
+
+.venue__rating {
+  @extend h2;
+  padding-left: 0.6rem;
+  color: #FFCA28;
 }
 
 .venue__status {
@@ -17,4 +29,9 @@
   &--closed {
     color: #EF5350;
   }
+}
+
+.venue__latlng {
+  font-size: 0.8rem;
+  color: #9E9E9E;
 }

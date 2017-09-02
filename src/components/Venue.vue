@@ -1,14 +1,21 @@
 <template>
   <div class="venue">
-    <div class="venue__information">
-      <h2>{{venue.name}} <span class="venue__rating">{{venue.rating}}</span></h2>
-      <p>
-        {{venue.location.address}},
-        {{venue.location.postalCode}}
-        <span class="venue__latlng">
-          LAT {{venue.location.lat}} LAT {{venue.location.lng}}
-        </span>
-      </p>
+    <div class="row">
+      <div class="column column--start">
+        <h2 class="venue__header">{{venue.name}} <span class="venue__rating">{{venue.rating}}</span></h2>
+      </div>
+      <div class="column column--end">
+        <p>Is open</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column column--start">
+        <p>{{venue.location.address}}, {{venue.location.postalCode}}</p>
+      </div>
+      <div class="column column--end">
+        <p>LAT {{venue.location.lat}} LAT {{venue.location.lng}}</p>
+      </div>
     </div>
     <!-- {{venue.venue}} -->
   </div>

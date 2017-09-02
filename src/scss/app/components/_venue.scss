@@ -1,8 +1,18 @@
 .venue {
+  display: block;
   margin-bottom: 1rem;
   padding: 1.4rem;
+  color: inherit;
   background-color: #FFF;
   border-radius: 3px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
 
   @media screen and (min-width: 700px) {
     p {

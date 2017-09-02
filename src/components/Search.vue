@@ -30,7 +30,6 @@
 
     methods: {
       searchVenuesByLocation () {
-        console.log(`searching for ${this.location}`)
         foursquare.search(this.location, (response) => {
           this.venues = response.groups[0].items
         })

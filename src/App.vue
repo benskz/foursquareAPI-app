@@ -1,5 +1,17 @@
 <template>
   <div id="app">
-    <h1>Hello World</h1>
+    <div class="container">
+      <search />
+    </div>
   </div>
 </template>
+
+<script>
+  import search from './components/search/Search.vue'
+
+  export default {
+    components: {
+      search,
+    },
+  }
+</script>

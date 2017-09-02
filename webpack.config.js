@@ -6,13 +6,16 @@ module.exports = {
   entry: {
     app: './src/main.js',
   },
+
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
   },
+
   resolve: {
     modules: ['src', 'node_modules'],
   },
+
   module: {
     rules: [
       {
@@ -63,6 +66,14 @@ module.exports = {
       },
     ],
   },
+
+  node: {
+    console: true,
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty',
+  },
+
   plugins: [
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
@@ -70,6 +81,7 @@ module.exports = {
       template: 'index.ejs',
     }),
   ],
+
   devServer: {
     contentBase: './dist',
   },

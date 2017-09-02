@@ -27,5 +27,5 @@ In order to interact with Foursquare's API I created a small class to contain th
 For the requests themselves I used [request](https://github.com/request/request) for simple HTTP calls.
 
 ### Todo
-Error handling
-Add UglifyJS to webpack build for smaller bundle
+* Error handling
+* Add UglifyJS to webpack build for smaller bundle

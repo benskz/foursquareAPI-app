@@ -2,7 +2,7 @@
   <div class="search">
     <div class="search__input">
       <form @submit.prevent="searchVenuesByLocation()">
-        <input type="text" placeholder="Search for a location..." v-model="location">
+        <input required type="text" placeholder="Search for a location..." v-model="location">
       </form>
     </div>
 
